@@ -1,12 +1,14 @@
-/*@media (max-width: 768px), (max-height: 600px) {
+/*@media (max-width: 768px), (max-height: 600px) {*/
 	.img {
 		background-image: url("../image/image/AGIR_original4.png");
-		width: 50%;
+		/*width: 40%;*/
 		margin-top: 12px;
 		margin-left: 10px;
 		margin-right: 10px;
+		background-size: 30%;
+		background-repeat: no-repeat;
 	}
-}*/
+/*}*/
 	#pulldown { width: 100%;  left:0; height: 0;  top: 0;  z-index: 1100;}
 	#header {height: 50px !important;}
 	/* #menu_deroulant { display: none;} */
