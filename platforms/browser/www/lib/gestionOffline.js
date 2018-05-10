@@ -120,7 +120,7 @@ $("#download").click(function() {
             //Vérifier si deuxième espece
             if ($("#selectEspece2 option:selected").text() !== 'Aucune') {
                 if ($("#selectEspece2 option:selected").text() === 'Autre') {
-                    espece = espece + "," + $('#nomAutreEspece2').val();
+                    espece = espece + ", " + $('#nomAutreEspece2').val();
                 }
                 //Sinon prendre la valeur coché
                 else {

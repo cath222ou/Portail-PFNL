@@ -250,3 +250,26 @@ hr{
         font-style: italic;
     }
 }
+
+
+@media (max-width: 999px), (max-height: 999px) {
+    .titre{
+        font-size:2em;
+        font-weight: bold;
+    }
+    .sousTitre{
+        font-size:1em;
+        font-style: italic;
+    }
+}
+
+@media (min-width: 1000px), (min-height: 1000px) {
+    .titre{
+        font-size:4em;
+        font-weight: bold;
+    }
+    .sousTitre{
+        font-size:3em;
+        font-style: italic;
+    }
+}
