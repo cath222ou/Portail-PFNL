@@ -75,12 +75,12 @@
     <feature name="Keyboard">
         <param name="android-package" onload="true" value="org.apache.cordova.labs.keyboard.Keyboard" />
     </feature>
-    <name>test</name>
+    <name>Portail PFNL</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Portail mobile - cartographie des produits forestiers non ligneux
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="vsavard@groupeagir.com" href="http://www.groupeagir.com/">
+        Agence de Gestion Intégrée des Ressources
     </author>
     <content src="index.html" />
     <access origin="*" />
