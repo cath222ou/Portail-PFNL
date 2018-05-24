@@ -1,3 +1,17 @@
+//Affichage de l'application
+$("#portfolio").click(function() {
+    $('#app').removeClass('hidden');
+    $('#page-top').addClass('hidden');
+});
+
+//Affichage de l'application
+$("#retourPage1").click(function() {
+    $('#page-top').removeClass('hidden');
+    $('#app').addClass('hidden');
+});
+
+
+
 //Fonction  nécessaire pour l'accordéon de la légende
 $( function() {
     $( "#accordion" ).accordion({
@@ -8,7 +22,7 @@ $( function() {
 
 //Afficher la division Carte
 $('#carte').addClass('hidden');
-
+$('#app').addClass('hidden');
 
 //Affichage de la carte en ligne (bouton Carte)
 $("#carteBtn").click(function() {

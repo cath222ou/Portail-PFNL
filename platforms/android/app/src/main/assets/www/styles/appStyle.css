@@ -219,10 +219,11 @@
     margin-bottom: 2%;
 }
 
-hr{
+/*.hrApp{
+
     border-color: #f16000 !important;
     border-width: medium !important;
-}
+}*/
 
 .ui-button:hover{
     background: #EC7600;
@@ -272,4 +273,42 @@ hr{
         font-size:3em;
         font-style: italic;
     }
+}
+
+section{
+    padding: 20px 0 !important;
+}
+
+.container-fluid>.navbar-header{
+    margin-right: 15px !important;
+    margin-left: 15px !important;
+}
+.container-fluid>.navbar-collapse{
+    margin-right: 15px !important;
+    margin-left: 15px !important;
+}
+
+input{
+    font-size:12px !important;
+}
+
+#pulldown .collapsed .visible-collapsed {
+    display: inline;
+    margin-right: 10px;
+}
+
+
+.rotate-north {
+
+    top: 150px;
+}
+
+.container-fluid{
+    padding-left:inherit !important;
+    padding-right:inherit !important;
+}
+
+
+#contact {
+    display: block;
 }
