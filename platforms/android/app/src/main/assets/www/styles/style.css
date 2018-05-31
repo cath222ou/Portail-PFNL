@@ -164,7 +164,7 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  font-size: 14px
 		#couchedefond span, #couchetheme span {padding-left:10px; font-size: 17px; font-weight: bold;}
 		.panel {  margin-bottom: 20px;  background-color: #fff;  border: 1px solid transparent;  border-radius: 4px;  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);  box-shadow: 0 1px 1px rgba(0,0,0,0.05);}
 		.panel-heading {  padding: 10px 15px;  border-bottom: 1px solid transparent;  border-top-right-radius: 3px;  border-top-left-radius: 3px;}
-		#couche .panel-heading {  padding: 0px 0px;  }
+		/*#couche .panel-heading {  padding: 0px 0px;  }*/
 		#couche ul {  padding-left: 20px;  }
 		
 	#documentation a {padding-left:40px;}
