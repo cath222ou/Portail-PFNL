@@ -141,7 +141,6 @@ $("#download").click(function() {
             //Fermer le modal
             $('#carteModal').modal('hide');
 
-
         });
         map.renderSync();
 

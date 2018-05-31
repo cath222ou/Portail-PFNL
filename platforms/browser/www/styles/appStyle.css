@@ -181,7 +181,7 @@
 }
 
 .invalid{
-    border-color: red;
+    border-color: red !important;
 }
 
 .modal{
