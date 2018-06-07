@@ -46,7 +46,7 @@
     /** Définition des couches PFNL (overlay)  - Exemple de 2 groupes IQH sur plusieurs échelles : Groupe_IQH1 et Groupe_IQH2 **/
     var iqh1_20 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh3/grille20/iqh3.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh3/grille20/iqh3.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 20",
@@ -58,7 +58,7 @@
 
     var iqh1_50 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh3/grille50/iqh3.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh3/grille50/iqh3.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 50",
@@ -70,7 +70,7 @@
 
     var iqh1_250 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh3/grille250/iqh3.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh3/grille250/iqh3.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 250",
@@ -81,7 +81,7 @@
 
     var iqh1_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://igeomedia.com/cgi-bin/mapserv?map=/home/odupras/public_html/data/iqh.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
             params: {LAYERS: 'iqh3', VERSION: '1.1.1'}
         }),
         maxResolution: 200,
@@ -94,7 +94,7 @@
 
     var iqh2_20 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh8/grille20/iqh8.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh8/grille20/iqh8.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 20",
@@ -106,7 +106,7 @@
 
     var iqh2_50 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh8/grille50/iqh8.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh8/grille50/iqh8.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 50",
@@ -118,7 +118,7 @@
 
     var iqh2_250 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh8/grille250/iqh8.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh8/grille250/iqh8.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 250",
@@ -130,7 +130,7 @@
 
     var iqh2_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://igeomedia.com/cgi-bin/mapserv?map=/home/odupras/public_html/data/iqh.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
             params: {LAYERS: 'iqh8', VERSION: '1.1.1'},
         }),
         maxResolution: 200,
@@ -145,7 +145,7 @@
     /** Définition des couches PFNL (overlay)  - Exemple de 2 groupes IQH sur plusieurs échelles : Groupe_IQH1 et Groupe_IQH2 **/
     var iqh3_20 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh3/grille20/iqh3.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh3/grille20/iqh3.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 20",
@@ -157,7 +157,7 @@
 
     var iqh3_50 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh3/grille50/iqh3.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh3/grille50/iqh3.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 50",
@@ -169,7 +169,7 @@
 
     var iqh3_250 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh3/grille250/iqh3.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh3/grille250/iqh3.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 250",
@@ -180,7 +180,7 @@
 
     var iqh3_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://igeomedia.com/cgi-bin/mapserv?map=/home/odupras/public_html/data/iqh.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
             params: {LAYERS: 'iqh3', VERSION: '1.1.1'}
         }),
         maxResolution: 200,
@@ -196,7 +196,7 @@
     /** Définition des couches PFNL (overlay)  - Exemple de 2 groupes IQH sur plusieurs échelles : Groupe_IQH1 et Groupe_IQH2 **/
     var iqh4_20 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh5/grille20/iqh5.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh5/grille20/iqh5.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 20",
@@ -208,7 +208,7 @@
 
     var iqh4_50 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh5/grille50/iqh5.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh5/grille50/iqh5.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 50",
@@ -220,7 +220,7 @@
 
     var iqh4_250 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh5/grille250/iqh5.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh5/grille250/iqh5.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 250",
@@ -231,7 +231,7 @@
 
     var iqh4_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://igeomedia.com/cgi-bin/mapserv?map=/home/odupras/public_html/data/iqh.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
             params: {LAYERS: 'iqh5', VERSION: '1.1.1'}
         }),
         maxResolution: 200,
@@ -247,7 +247,7 @@
     /** Définition des couches PFNL (overlay)  - Exemple de 2 groupes IQH sur plusieurs échelles : Groupe_IQH1 et Groupe_IQH2 **/
     var iqh5_20 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh6/grille20/iqh6.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh6/grille20/iqh6.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 20",
@@ -259,7 +259,7 @@
 
     var iqh5_50 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh6/grille50/iqh6.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh6/grille50/iqh6.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 50",
@@ -271,7 +271,7 @@
 
     var iqh5_250 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh6/grille250/iqh6.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh6/grille250/iqh6.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 250",
@@ -282,7 +282,7 @@
 
     var iqh5_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://igeomedia.com/cgi-bin/mapserv?map=/home/odupras/public_html/data/iqh.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
             params: {LAYERS: 'iqh6', VERSION: '1.1.1'}
         }),
         maxResolution: 200,
@@ -298,7 +298,7 @@
     /** Définition des couches PFNL (overlay)  - Exemple de 2 groupes IQH sur plusieurs échelles : Groupe_IQH1 et Groupe_IQH2 **/
     var iqh6_20 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh8/grille20/iqh8.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh8/grille20/iqh8.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 20",
@@ -310,7 +310,7 @@
 
     var iqh6_50 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh8/grille50/iqh8.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh8/grille50/iqh8.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 50",
@@ -322,7 +322,7 @@
 
     var iqh6_250 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh8/grille250/iqh8.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh8/grille250/iqh8.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 250",
@@ -333,7 +333,7 @@
 
     var iqh6_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://igeomedia.com/cgi-bin/mapserv?map=/home/odupras/public_html/data/iqh.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
             params: {LAYERS: 'iqh8', VERSION: '1.1.1'}
         }),
         maxResolution: 200,
@@ -349,7 +349,7 @@
     /** Définition des couches PFNL (overlay)  - Exemple de 2 groupes IQH sur plusieurs échelles : Groupe_IQH1 et Groupe_IQH2 **/
     var iqh7_20 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh12/grille20/iqh12.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh12/grille20/iqh12.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 20",
@@ -361,7 +361,7 @@
 
     var iqh7_50 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh12/grille50/iqh12.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh12/grille50/iqh12.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 50",
@@ -373,7 +373,7 @@
 
     var iqh7_250 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://igeomedia.com/~odupras/data/iqh/iqh12/grille250/iqh12.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh12/grille250/iqh12.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 250",
@@ -384,7 +384,7 @@
 
     var iqh7_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://igeomedia.com/cgi-bin/mapserv?map=/home/odupras/public_html/data/iqh.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
             params: {LAYERS: 'iqh12', VERSION: '1.1.1'}
         }),
         maxResolution: 200,
@@ -449,7 +449,7 @@
 
     var chemin = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://igeomedia.com/cgi-bin/mapserv?map=/home/odupras/public_html/data/aqrplus.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/aqrplus.map&',
             params: {LAYERS: 'che_for_01', VERSION: '1.1.1'}
         })
     });
