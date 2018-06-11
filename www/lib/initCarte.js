@@ -81,7 +81,7 @@
 
     var iqh1_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data2018/iqh.map&',
             params: {LAYERS: 'iqh3', VERSION: '1.1.1'}
         }),
         maxResolution: 200,
@@ -130,7 +130,7 @@
 
     var iqh2_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data2018/iqh.map&',
             params: {LAYERS: 'iqh8', VERSION: '1.1.1'},
         }),
         maxResolution: 200,
@@ -180,7 +180,7 @@
 
     var iqh3_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data2018/iqh.map&',
             params: {LAYERS: 'iqh3', VERSION: '1.1.1'}
         }),
         maxResolution: 200,
@@ -231,7 +231,7 @@
 
     var iqh4_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data2018/iqh.map&',
             params: {LAYERS: 'iqh5', VERSION: '1.1.1'}
         }),
         maxResolution: 200,
@@ -282,7 +282,7 @@
 
     var iqh5_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data2018/iqh.map&',
             params: {LAYERS: 'iqh6', VERSION: '1.1.1'}
         }),
         maxResolution: 200,
@@ -333,7 +333,7 @@
 
     var iqh6_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data2018/iqh.map&',
             params: {LAYERS: 'iqh8', VERSION: '1.1.1'}
         }),
         maxResolution: 200,
@@ -384,7 +384,7 @@
 
     var iqh7_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data2018/iqh.map&',
             params: {LAYERS: 'iqh12', VERSION: '1.1.1'}
         }),
         maxResolution: 200,
@@ -449,7 +449,7 @@
 
     var chemin = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/aqrplus.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data2018/aqrplus.map&',
             params: {LAYERS: 'che_for_01', VERSION: '1.1.1'}
         })
     });
