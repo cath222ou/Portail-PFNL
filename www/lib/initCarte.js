@@ -449,7 +449,7 @@
 
     var chemin = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data2018/aqrplus.map&',
+            url: 'http://igeomedia.com/cgi-bin/mapserv?map=/home/odupras/public_html/data/aqrplus.map&',
             params: {LAYERS: 'che_for_01', VERSION: '1.1.1'}
         })
     });
