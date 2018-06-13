@@ -433,16 +433,16 @@
     /** Définition des couches Service (overlay)  - Groupe_Topo qui contient les couches du service WMS  http://ows.geobase.ca/wms/geobase_fr et fichiers AQR+**/
     var hydro = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://maps.geogratis.gc.ca/wms/canvec_fr',
-            params: {LAYERS: 'hydro', VERSION: '1.3.0'}
+            url: 'http://cartes.geogratis.gc.ca/wms/hydro_network_fr?',
+            params: {LAYERS: 'hydro_network', VERSION: '1.1.1'}
         })
     });
     hydro.setVisible(false);
 
     var route = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://maps.geogratis.gc.ca/wms/canvec_fr',
-            params: {LAYERS: 'transport', VERSION: '1.3.0'}
+            url: 'http://cartes.geogratis.gc.ca/wms/roads_fr?',
+            params: {LAYERS: 'routes', VERSION: '1.1.1'}
         })
     });
     route.setVisible(false);
