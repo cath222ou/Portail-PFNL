@@ -46,7 +46,7 @@
     /** Définition des couches PFNL (overlay)  - Exemple de 2 groupes IQH sur plusieurs échelles : Groupe_IQH1 et Groupe_IQH2 **/
     var iqh1_20 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh3/grille20/iqh3.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh62/grille20/iqh62.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 20",
@@ -58,7 +58,7 @@
 
     var iqh1_50 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh3/grille50/iqh3.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh62/grille50/iqh62.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 50",
@@ -70,7 +70,7 @@
 
     var iqh1_250 = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
-            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh3/grille250/iqh3.geojson",
+            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh62/grille250/iqh62.geojson",
             projection: 'EPSG:3857'
         }),
         title: "IQH Grille 250",
@@ -81,8 +81,8 @@
 
     var iqh1_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data2018/iqh.map&',
-            params: {LAYERS: 'iqh3', VERSION: '1.1.1'}
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
+            params: {LAYERS: 'iqh62', VERSION: '1.1.1'}
         }),
         maxResolution: 200,
     });
@@ -91,55 +91,103 @@
     var Groupe_IQH1 = new ol.layer.Group({layers: [iqh1_20, iqh1_50, iqh1_250, iqh1_WMS], name: 'iqh1'});
     Groupe_IQH1.setVisible(false);
 
+    var iqh1_20 = new ol.layer.Vector({
+          source: new ol.source.GeoJSON({
+                    url: "http://portailpfnl.com/~mgermain/data2018/iqh/iqh62/grille20/iqh62.geojson",
+                    projection: 'EPSG:3857'
+                    }),
+          title:"IQH Grille 20",
+          minResolution: 100,
+          maxResolution: 1000,
+          style: setGridFeatureStyle
+        });
+        iqh1_20.setVisible(true);
 
-    var iqh2_20 = new ol.layer.Vector({
-        source: new ol.source.GeoJSON({
-            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh8/grille20/iqh8.geojson",
-            projection: 'EPSG:3857'
-        }),
-        title: "IQH Grille 20",
-        minResolution: 100,
-        maxResolution: 1000,
-        style: setGridFeatureStyle
-    });
-    iqh2_20.setVisible(true);
+	 var iqh1_50 = new ol.layer.Vector({
+          source: new ol.source.GeoJSON({
+                    url: "http://portailpfnl.com/~mgermain/data2018/iqh/iqh62/grille50/iqh62.geojson",
+                    projection: 'EPSG:3857'
+                    }),
+          title:"IQH Grille 50",
+          minResolution: 1000,
+          maxResolution: 2000,
+          style: setGridFeatureStyle
+        });
+        iqh1_50.setVisible(true);
 
-    var iqh2_50 = new ol.layer.Vector({
-        source: new ol.source.GeoJSON({
-            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh8/grille50/iqh8.geojson",
-            projection: 'EPSG:3857'
-        }),
-        title: "IQH Grille 50",
-        minResolution: 1000,
-        maxResolution: 2000,
-        style: setGridFeatureStyle
-    });
-    iqh2_50.setVisible(true);
+        var iqh1_250 = new ol.layer.Vector({
+          source: new ol.source.GeoJSON({
+                    url: "http://portailpfnl.com/~mgermain/data2018/iqh/iqh62/grille250/iqh62.geojson",
+                    projection: 'EPSG:3857'
+                    }),
+          title:"IQH Grille 250",
+          minResolution: 2000,
+          style: setGridFeatureStyle
+        });
+        iqh1_250.setVisible(true);
 
-    var iqh2_250 = new ol.layer.Vector({
-        source: new ol.source.GeoJSON({
-            url: "http://agir.cgq.qc.ca/~mgermain/data/iqh/iqh8/grille250/iqh8.geojson",
-            projection: 'EPSG:3857'
-        }),
-        title: "IQH Grille 250",
-        minResolution: 2000,
-        style: setGridFeatureStyle
-    });
-    iqh2_250.setVisible(true);
+        var iqh1_WMS = new ol.layer.Tile({source: new ol.source.TileWMS({
+                    url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data2018/iqh.map&',
+                    params: {LAYERS: 'iqh62', VERSION: '1.1.1'}
+                }),
+            maxResolution: 200,
+            });
+        iqh1_WMS.setVisible(true);
 
+        var Groupe_IQH1_2018 = new ol.layer.Group({layers: [iqh1_20,iqh1_50,iqh1_250,iqh1_WMS], name: 'iqh1_2018'});
+        Groupe_IQH1_2018.setVisible(false);
 
-    var iqh2_WMS = new ol.layer.Tile({
-        source: new ol.source.TileWMS({
-            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data2018/iqh.map&',
-            params: {LAYERS: 'iqh8', VERSION: '1.1.1'},
-        }),
-        maxResolution: 200,
-    });
-    iqh2_WMS.setVisible(true);
+        var iqh1_20 = new ol.layer.Vector({
+          source: new ol.source.GeoJSON({
+                    url: "http://portailpfnl.com/~mgermain/data2018/iqh/iqh70/grille20/iqh70.geojson",
+                    projection: 'EPSG:3857'
+                    }),
+          title:"IQH Grille 20",
+          minResolution: 100,
+          maxResolution: 1000,
+          style: setGridFeatureStyle
+        });
+        iqh1_20.setVisible(true);
 
-    var Groupe_IQH2 = new ol.layer.Group({layers: [iqh2_20, iqh2_50, iqh2_250, iqh2_WMS], name: 'iqh2'});
-    Groupe_IQH2.setVisible(false);
+        var iqh1_50 = new ol.layer.Vector({
+          source: new ol.source.GeoJSON({
+                    url: "http://portailpfnl.com/~mgermain/data2018/iqh/iqh70/grille50/iqh70.geojson",
+                    projection: 'EPSG:3857'
+                    }),
+          title:"IQH Grille 50",
+          minResolution: 1000,
+          maxResolution: 2000,
+          style: setGridFeatureStyle
+        });
+        iqh1_50.setVisible(true);
 
+        var iqh1_250 = new ol.layer.Vector({
+          source: new ol.source.GeoJSON({
+                    url: "http://portailpfnl.com/~mgermain/data2018/iqh/iqh70/grille250/iqh70.geojson",
+                    projection: 'EPSG:3857'
+                    }),
+          title:"IQH Grille 250",
+          minResolution: 2000,
+          style: setGridFeatureStyle
+        });
+        iqh1_250.setVisible(true);
+
+        var iqh1_WMS = new ol.layer.Tile({source: new ol.source.TileWMS({
+                    url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data2018/iqh.map&',
+                    params: {LAYERS: 'iqh70', VERSION: '1.1.1'}
+                }),
+            maxResolution: 200,
+            });
+        iqh1_WMS.setVisible(true);
+
+        var Groupe_IQH2_2018 = new ol.layer.Group({layers: [iqh1_20,iqh1_50,iqh1_250,iqh1_WMS], name: 'iqh2_2018'});
+        Groupe_IQH2_2018.setVisible(false);
+
+         var Groupe_IQH2 = new ol.layer.Group({layers: [iqh1_20,iqh1_50,iqh1_250,iqh1_WMS], name: 'iqh2'});
+         Groupe_IQH2.setVisible(false);
+
+        /////////////////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////////////////////
 
 //CHANTERELLE TUBE///////////////////////
     /** Définition des couches PFNL (overlay)  - Exemple de 2 groupes IQH sur plusieurs échelles : Groupe_IQH1 et Groupe_IQH2 **/
@@ -180,7 +228,7 @@
 
     var iqh3_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data2018/iqh.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
             params: {LAYERS: 'iqh3', VERSION: '1.1.1'}
         }),
         maxResolution: 200,
@@ -231,7 +279,7 @@
 
     var iqh4_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data2018/iqh.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
             params: {LAYERS: 'iqh5', VERSION: '1.1.1'}
         }),
         maxResolution: 200,
@@ -282,7 +330,7 @@
 
     var iqh5_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data2018/iqh.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
             params: {LAYERS: 'iqh6', VERSION: '1.1.1'}
         }),
         maxResolution: 200,
@@ -333,7 +381,7 @@
 
     var iqh6_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data2018/iqh.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
             params: {LAYERS: 'iqh8', VERSION: '1.1.1'}
         }),
         maxResolution: 200,
@@ -384,7 +432,7 @@
 
     var iqh7_WMS = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data2018/iqh.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/iqh.map&',
             params: {LAYERS: 'iqh12', VERSION: '1.1.1'}
         }),
         maxResolution: 200,
@@ -433,23 +481,23 @@
     /** Définition des couches Service (overlay)  - Groupe_Topo qui contient les couches du service WMS  http://ows.geobase.ca/wms/geobase_fr et fichiers AQR+**/
     var hydro = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://cartes.geogratis.gc.ca/wms/hydro_network_fr?',
-            params: {LAYERS: 'hydro_network', VERSION: '1.1.1'}
+            url: 'http://maps.geogratis.gc.ca/wms/canvec_fr',
+            params: {LAYERS: 'hydro', VERSION: '1.3.0'}
         })
     });
     hydro.setVisible(false);
 
     var route = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://cartes.geogratis.gc.ca/wms/roads_fr?',
-            params: {LAYERS: 'routes', VERSION: '1.1.1'}
+            url: 'http://maps.geogratis.gc.ca/wms/canvec_fr',
+            params: {LAYERS: 'transport', VERSION: '1.3.0'}
         })
     });
     route.setVisible(false);
 
     var chemin = new ol.layer.Tile({
         source: new ol.source.TileWMS({
-            url: 'http://igeomedia.com/cgi-bin/mapserv?map=/home/odupras/public_html/data/aqrplus.map&',
+            url: 'http://agir.cgq.qc.ca/cgi-bin/mapserv?map=/home/mgermain/public_html/data/aqrplus.map&',
             params: {LAYERS: 'che_for_01', VERSION: '1.1.1'}
         })
     });

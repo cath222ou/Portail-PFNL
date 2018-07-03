@@ -15,26 +15,26 @@
  */
 var url = {
 	cgi: function() {
-		return [ "http://igeomedia.com", "cgi-bin/mapserv?map=/home/odupras/public_html/data" ].join( "/" )
+		return [ "http://agir.cgq.qc.ca", "cgi-bin/mapserv?map=/home/mgermain/public_html/data2018" ].join( "/" )
 	}, 
-  root: function() {
-    return [ "http://localhost", "pfnl" ].join( "/" ); 
-  }, 
-  data: function() {
-    return [ url.root(), "data" ].join( "/" );  
-  }, 
-  process: function() {
-    return [ url.root(), "process" ].join( "/" ); 
-  }, 
-  php: function() {
-    return [ url.process(), "php" ].join( "/" ); 
-  }, 
-  python: function() {
-  	return [ url.process(), "python" ].join( "/" ); 
-  }, 
-  file: function(fn, name) {
-  	return [ fn, name ].join( "/" ); 
-  }
+    root: function() {
+        return [ "http://portailpfnl.com/projet", "pfnlite2" ].join( "/" );
+    },
+    process: function() {
+        return [ url.root(), "process" ].join( "/" );
+    },
+    data: function() {
+        return [ url.root(), "data" ].join( "/" );
+    },
+    php: function() {
+        return [ url.process(), "php" ].join( "/" );
+    },
+    python: function() {
+        return [ url.process(), "python" ].join( "/" );
+    },
+    file: function(fn, name) {
+        return [ fn, name ].join( "/" );
+    }
 }
 var max=0;
 
